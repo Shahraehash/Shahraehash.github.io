@@ -39,7 +39,36 @@
 					<section id="two">
 						<h2>Recent Work</h2>
 						<div class="row">
-	
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/Projects/BatchBlend.jpg" class="image fit thumb"><img src="images/Projects/BatchBlend.jpg" alt="" /></a>
+								<h3>BatchBlend: Batch-Aware Interpretable Probabilistic Graphical Model for Integrating Spatially Resolved Transcriptomes (Aug 2024 - May 2025)</h3>
+								<p>While multi-sample spatially-resolved transcriptomics (mSRT) technologies have enhanced our ability to compare different 
+									tissues across conditions and time points, they often introduce technical artifacts or batch effects that confound biological 
+									interpretability. Current batch effect correction methods either sacrifice interpretability for performance or fail to adequately 
+									leverage spatial context. BatchBlend addresses this gap by extending the interpretable framework of Popari with an 
+									explicit batch effect term, enabling the separation of technical variation from biological signal while maintaining an  interpretable 
+									framework. The model is formulated as a non-negative matrix factorization with hidden Markov random fields (NMF-HMRF) similar to 
+									Popari with an added sample-specific batch effect term. Through comprehensive evaluation on simulated mSRT data, BatchBlend 
+									demonstrates competitive batch effect correction while maintaining moderate biological signal preservation compared to established methods: 
+									PyLiger, scVI, and STAligner. In addition, BatchBlend's performance in batch effect correction on mouse brain 
+									coronal slices was analyzed when integrating data from MERFISH, MERSCOPE and STARmap. While BatchBlend offers an interpretable approach 
+									to mSRT batch correction, further methodological refinements are needed to fully leverage spatial context during integration, presenting promising 
+									directions for future research to enhance both integration quality and biological signal preservation in spatially resolved transcriptomics.
+									<a href="Batch_Blend_Thesis.pdf"> Thesis.</a>
+									<a href="https://github.com/alam-shahul/popari/tree/batch_blend"> Codebase.</a>
+								</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/Projects/KG.jpg" class="image fit thumb"><img src="images/Projects/KG.jpg" alt="" /></a>
+								<h3>Open Targets Biocypher Knowledge Graph (Jan - May 2025)</h3>
+								<p>This project, as a Masters Capstone partnership with UndauntedBio, created a biological knowledge graph from OpenTargets data and 
+									loads it into a Neo4j database. The knowledge graph captures relationships between diseases, targets, and molecules, providing a 
+									comprehensive resource for drug discovery and biomedical research. Particularly it highlights potential for drug repurposing and
+									discovery novel therapeutucs. We also developed a user-friendly web application which utilized an LLM to allow users to query the knowledge graph
+									through natural language. The application provides a seamless interface for researchers to explore the knowledge graph and gain insights. 
+									<a href="https://github.com/Shahraehash/ot_biocypher"> Learn More.</a>
+								</p>
+							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/Projects/ActiveLearning.png" class="image fit thumb"><img src="images/Projects/ActiveLearning.png" alt="" /></a>
 								<h3>Biologically-Guided Active Learning for Transcriptomic Classification of Aplastic Anemia (Mar - Apr 2025)</h3>
@@ -67,7 +96,7 @@
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/Projects/NLP_Pubmed.jpg" class="image fit thumb"><img src="images/Projects/NLP_Pubmed.jpg" alt="" /></a>
-								<h3>PubMed Search Engine (May - Aug 2024)</h3>
+								<h3>PubMed Search Engine (May - Aug 2024)</h3> 
 								<p>As an intern at GEn1E Lifesciences, I developed a PubMed search engine which aids researchers to review published papers to gain insights into 
 									ongoing work in the field of drug discovery that gathers more detailed information than standard PubMed searches. Therefore using Large Language 
 									Models (LLMs) and Knowledge Graphs, the tool I developed can enhance our understanding of relevant studies that aid in advancing precision therapies.</p>
@@ -78,14 +107,16 @@
 								<p>In a class project at Carnegie Mellon University, we applied graphical methods discussed in our course to see if these tools can produce plausible mutated sequences of 
 									COVID-19. We specifically assessed Hidden Markov Models, Variational Autoencoders, and Generative Adversarial Networks, to evaluate their effectiveness. To measure the 
 									success of the methods, which we compared the GC content of our generated sequences and performed local alignment against a consensus COVID-19 genome. This dual approach 
-									not only tests the structural accuracy of our models but also their practical applicability in simulating the evolutionary dynamics of the virus. <a href="https://github.com/cosmic20/10708Project"> Learn More.</a></p>
+									not only tests the structural accuracy of our models but also their practical applicability in simulating the evolutionary dynamics of the virus. 
+									<a href="https://github.com/cosmic20/10708Project"> Learn More.</a></p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/Projects/SIMON.jpg" class="image fit thumb"><img src="images/Projects/SIMON.jpg" alt="" /></a>
 								<h3>SIMON - SIgnal siMulated by diffusiON (May - Aug 2023) </h3>
 								<p>SIMON is a conditional diffusion based machine learning model which generates large amounts of ONT signal data from a nucleotide sequence. This tool 
 									will help provide adequate amounts of data for the QC Virology Development team at Regeneron to generate tools to help supplement current detection 
-									protocols for viruses. Currently SIMON has been shown to perform well in generating sequencing data for CHO (mammalian) sequencing data. <a href="https://github.com/Shahraehash/Regeneron_SIMON"> Learn More.</a></p>
+									protocols for viruses. Currently SIMON has been shown to perform well in generating sequencing data for CHO (mammalian) sequencing data. 
+									<a href="https://github.com/Shahraehash/Regeneron_SIMON"> Learn More.</a></p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/Projects/Sniffer.jpg" class="image fit thumb"><img src="images/Projects/Sniffer.jpg" alt="" /></a>
@@ -93,7 +124,8 @@
 								<p>At Werfen Instrumentation Laboratory, Beacon, a throughput hemostasis testing device, there are multiple L3 boards which control varying number of L4 boards. 
 									The communication between the L3 host and up to 7 L4 nodes is across a RS-485 bus which is built on a time-division multiplexing (TDM) principle. This means 
 									there are packets of data that is exchanged between the L3 board and L4 boards regularly. Each cycle consists of a L3 board sending a fixed packet to specific 
-									defined nodes and those nodes later respond with a status packet. This sniffer's goal is to analyze each of the packets that are sent across this bus and report it to the user. <a href="https://github.com/Shahraehash/Werfen_TDMProtocolAnalyzerSniffer"> Learn More.</a></p>
+									defined nodes and those nodes later respond with a status packet. This sniffer's goal is to analyze each of the packets that are sent across this bus and report it to the user. 
+									<a href="https://github.com/Shahraehash/Werfen_TDMProtocolAnalyzerSniffer"> Learn More.</a></p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/Projects/Modeling.jpg" class="image fit thumb"><img src="images/Projects/Modeling.jpg" alt="" /></a>
@@ -104,7 +136,8 @@
 									of methylation in healthy individuals and those with type 1 diabetes. Moreover,
 									we show these Markov Models are generalizable by using them to predict age
 									given unseen methylation sites and benchmark their performance against a linear
-									regression baseline and deep neural network. <a href="Comparing_Temporal_Change_of_DNA_Methylation_Between_Type_1_Diabetes_Patients_and_Healthy_Individuals.pdf"> Learn More.</a></p>
+									regression baseline and deep neural network. 
+									<a href="Comparing_Temporal_Change_of_DNA_Methylation_Between_Type_1_Diabetes_Patients_and_Healthy_Individuals.pdf"> Learn More.</a></p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/Projects/Organoids.jpg" class="image fit thumb"><img src="images/Projects/Organoids.jpg" alt="" /></a>
@@ -112,7 +145,8 @@
 								<p>I worked with organoids in the Englander Institute for Precision Medicine to compare gene expression from Primary Tumor Samples to different stages in the organoid cell culture 
 									(i.e. Passage 5 and Passage 10). Through Hierarchical Clustering, Principal Component Analysis (PCA) and differential gene expression analysis and clustering analysis, the results 
 									demonstrated to what extent the organoids maintained their characteristics to a live tumor sample. The results suggested very little difference in some organoids and their matching 
-									patient tumors. However, as tumors were cultured to organoids, the organoids clustered well from passage 5 to passage 10. <a href="https://www.biorxiv.org/content/10.1101/2025.04.10.647635v1"> Learn More.</a></p>
+									patient tumors. However, as tumors were cultured to organoids, the organoids clustered well from passage 5 to passage 10. 
+									<a href="https://www.biorxiv.org/content/10.1101/2025.04.10.647635v1"> Learn More.</a></p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/Projects/RHD.jpg" class="image fit thumb"><img src="images/Projects/RHD.jpg" alt="" /></a>
@@ -122,7 +156,8 @@
 									the streptolysin treated subsets of these T cells was added to the differentiated myofibroblasts to observe the “fibrosis” process. To examine the impact of contact with the myofibroblasts, 
 									CD4+ and CD8+ T cells were cultured together with the myofibroblasts, as well as individually. In addition, HLA genes encoding MHC complexes were analyzed using 
 									bioinformatics to determine if specific HLA types have a role in rheumatic heart disease. These MHC complexes bind to the T cell receptors, eliciting autoreactivity of the T cell, 
-									facilitating fibrosis of the mitral valve. This project was performed at Bergen County Academies. <a href="The_Role_of_Glycoproteins_and_HLA_markers_in_Fibrosis_of_Rheumatic_Valvular_Disease.pdf"> Learn More.</a></p>
+									facilitating fibrosis of the mitral valve. This project was performed at Bergen County Academies. 
+									<a href="The_Role_of_Glycoproteins_and_HLA_markers_in_Fibrosis_of_Rheumatic_Valvular_Disease.pdf"> Learn More.</a></p>
 							</article>
 							<!-- <article class="col-6 col-12-xsmall work-item">
 								<a href="images/Projects/Pittsburgh_Rivers.jpg" class="image fit thumb"><img src="images/Projects/Pittsburgh_Rivers.jpg" alt="" /></a>
@@ -137,7 +172,8 @@
 								<h3>Virome Sniff (Jun 2017)</h3>
 								<p>Developed a tool that would detect and visualize from NGS data. The tool would search for viruses in protein, rather than nucleotide 
 									space to capture and characterize larger number of viruses and detect viruses- associated domains in the sample. My specific role within the project was to develop
-									the visualization and the user interface for the project. This project was performed over a few days at the New York Genome Center Hackathon.  <a href="https://github.com/NCBI-Hackathons/Virus_Domains"> Learn More.</a></p>
+									the visualization and the user interface for the project. This project was performed over a few days at the New York Genome Center Hackathon. 
+									 <a href="https://github.com/NCBI-Hackathons/Virus_Domains"> Learn More.</a></p>
 							</article>
 						</div>
 						<!--
